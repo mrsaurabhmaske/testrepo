@@ -1,0 +1,210 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+  background-color: yellow;
+}
+
+.indexbuttons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:20px
+}
+
+.button{
+  padding: 10px;
+  height: 50px;
+  width:150px;
+  border-radius: 20px;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  color: black;
+  box-shadow: 2px 5px 5px black;
+  transition: all 0.3s;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button:hover{
+  padding: 15px;
+  height: 60px;
+  width:140px;
+  background-color: rgb(255, 255, 114);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  outline:1px solid grey;
+  padding: 20px;
+  border-radius: 50px;
+  font-size: 20px;
+  align-items: center;
+  color: white;
+  background:linear-gradient( rgb(20, 20, 49) ,rgb(36, 34, 31) 95%);
+  border: 3px solid greenyellow;
+  transition: all 0.5s ease-in-out;
+}
+
+form input{
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: greenyellow;
+  font-size: 25px;
+  color: green;
+  transition: all 0.5s ease-in-out;
+}
+
+form input:focus  {
+ outline: 3px solid white;
+}
+
+form button{
+  padding: 10px;
+  height: 50px;
+  width:150px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(92, 180, 92);
+  font-size: 20px;
+  color: white;
+  transition: all 0.3s;
+}
+
+form button:hover{
+  background-color: rgb(0, 255, 0);
+  cursor: pointer;
+  scale: 1.05;
+  color: black;
+}
+
+.message{
+  font-size: 20px;
+}
+
+.sidebar{
+  height: 100dvh;
+  width: 20%;
+  background-color: rgb(255, 255, 217);
+  color: grey;
+  position: absolute;
+  left: 0;
+}
+
+.newchatbtncontainer{
+  width:100%;
+  height:70px;
+  background-color:yellow;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.new-chat{
+  padding: 5px;
+  width:10rem;
+  height: 3rem;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  font-size: 1.3rem;
+  color:grey;
+}
+
+.sidebar-buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap:5px;
+  margin-top: 5px;
+  overflow:inherit;
+}
+
+.sidebar-buttons button{
+  width:90%;
+  border: none;
+  padding: 5px;
+  height: 50px;
+  font-size: 1.1rem;
+  color: grey;
+  background-color: yellow;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.sidebar-buttons button:nth-child(1){
+  border-radius: 20px 0px 0px 20px;
+}
+
+.sidebar-buttons button:hover{
+  box-shadow: -10px 0px 2px rgb(100, 100, 90);
+}
+
+.chat-container{
+  height: 100dvh;
+  width: 80%;
+  position: absolute;
+  right:0;
+}
+.chat-header{
+  padding: 20px;
+  text-align: center;
+  color: grey;
+}
+
+.chat-messages{
+  background-color: rgb(255, 255, 208);
+  width: 80%;
+  border-radius: 20px;
+  padding: 20px;
+  height: 400px;
+  position: absolute;
+  bottom: 120px;
+  left: 10%;
+  overflow:auto;
+}
+
+.chat-input{
+  background-color: yellow;
+  padding: 20px;
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap:5px;
+}
+
+.chat-input button{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border:none;
+  background-color: rgb(255, 255, 210);
+}
+
+.chat-input input{
+  height: 60px;
+  border-radius: 25px;
+  border: none;
+  width: 85%;
+  background-color: rgb(255, 255, 180);
+  color: grey;
+  outline: none;
+  padding: 20px;
+  font-size: 1.2rem;
+}

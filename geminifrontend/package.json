@@ -1,0 +1,23 @@
+{
+  "name": "geminifrontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "checkonline" :"next dev -- -H 192.168.0.110",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-oauth/google": "^0.12.1",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-router-dom": "^6.21.1"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4"
+  }
+}
