@@ -1,6 +1,7 @@
 "use client"
 import Link from "next/link"
 import { GoogleLogin } from "@react-oauth/google"
+import { jwtDecode } from "jwt-decode"
 
 
 
@@ -16,7 +17,8 @@ const LoginPage = ()=>{
                 <button type="submit">Login</button>
                 <GoogleLogin
   onSuccess={credentialResponse => {
-    console.log(credentialResponse);
+    let credentialResponseDecoded = jwtDecode(credentialResponse.credential);
+    console.log(credentialResponseDecoded);
   }}
   onError={() => {
     console.log("Login Failed");
