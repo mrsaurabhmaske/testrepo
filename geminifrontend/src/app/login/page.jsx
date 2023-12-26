@@ -20,7 +20,7 @@ const LoginPage = () => {
         <GoogleLogin
           onSuccess={async (credentialResponse) => {
             const decoded = jwtDecode(credentialResponse.credential);
-            console.log(decoded);
+            console.log({decoded,credentialResponse});
             router.push("/dashboard");
           }}
           onError={() => {
