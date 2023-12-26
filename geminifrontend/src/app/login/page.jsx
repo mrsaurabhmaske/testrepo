@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import { GoogleLogin } from '@react-oauth/google';
+import { GoogleLogin } from '@react-oauth/google'
 
 
 
