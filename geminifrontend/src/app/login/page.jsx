@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import { GoogleLogin } from '@react-oauth/google'
+import { GoogleLogin } from "@react-oauth/google"
 
 
 
@@ -19,10 +19,10 @@ const LoginPage = ()=>{
     console.log(credentialResponse);
   }}
   onError={() => {
-    console.log('Login Failed');
+    console.log("Login Failed");
   }}
 />
-                <label className="message">Don't have an account? <Link href="/signup">Register</Link></label>
+                <label className="message">{"Don't have an account?"} <Link href="/signup">Register</Link></label>
             </form>
             
         </div>
