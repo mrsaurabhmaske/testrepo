@@ -8,7 +8,8 @@ body{
   height: 100dvh;
   display: grid;
   place-items: center;
-  background-color: yellow;
+  background:linear-gradient(black,rgb(71, 110, 13));
+  color: white;
 }
 
 .indexbuttons{
@@ -24,7 +25,7 @@ body{
   width:150px;
   border-radius: 20px;
   border: none;
-  background-color: transparent;
+  background-color: greenyellow;
   font-size: 20px;
   color: black;
   box-shadow: 2px 5px 5px black;
@@ -34,10 +35,8 @@ body{
 }
 
 .button:hover{
-  padding: 15px;
-  height: 60px;
-  width:140px;
   background-color: rgb(255, 255, 114);
+  animation: energy 0.5s;
 }
 
 form{
@@ -207,4 +206,31 @@ form button:hover{
   outline: none;
   padding: 20px;
   font-size: 1.2rem;
+}
+
+
+@keyframes energy {
+  0% {
+    transform: scale (1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.2, 0.8);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+.google-login-container{
+  background-color: ;
+  text-align: center;
+  padding: 10px;
+}
+
+.google-login-btn{
+  background-color: red;
+  width:70% 
 }
