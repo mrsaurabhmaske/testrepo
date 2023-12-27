@@ -9,7 +9,10 @@ const LoginPage = () => {
   const router = useRouter();
 
 const login = useGoogleLogin({
-  onSuccess: tokenResponse => console.log(tokenResponse),
+  onSuccess: tokenResponse => {
+    console.log(tokenResponse);
+    router.push("/dashboard")
+  },
   onError: error => console.log(error),
   flow: 'auth-code',
 });
